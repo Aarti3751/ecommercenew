@@ -1,0 +1,103 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333; /* Dark background for the navbar */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand-name h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff5722; /* Accent color for the brand */
+}
+
+.navbar .search-bar input {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.navbar .search-bar input:focus {
+  outline: none;
+  border-color: #ff5722; /* Accent color when focused */
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .icons .icon {
+  color: white;
+  font-size: 22px;
+  position: relative;
+}
+
+.navbar .icons .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff5722;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.navbar .filter select {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.navbar .filter select:focus {
+  outline: none;
+  border-color: #ff5722; /* Accent color when focused */
+}
+
+/* Hover effects */
+.navbar .icons .icon:hover {
+  color: #ff5722;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.navbar .filter select:hover {
+  border-color: #ff5722;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar .icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar .filter {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

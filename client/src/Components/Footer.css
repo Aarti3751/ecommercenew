@@ -1,0 +1,100 @@
+/* Footer styling */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    padding: 0 15px; /* Add padding to the container for better spacing */
+  }
+  
+  .footer-section h5 {
+    color: #fff; /* White color for section titles */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #ccc; /* Lighter grey for links */
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff; /* White color on hover */
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    color: #fff; /* White icons */
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .social-icon:hover {
+    color: #ccc; /* Lighter grey on hover */
+  }
+  
+  /* Newsletter form */
+  .newsletter-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .subscribe-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6f61; /* Light red-orange color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #ff4f3e; /* Darker red-orange color */
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    padding-top: 15px;
+    border-top: 1px solid #444; /* Darker line to separate the bottom */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  
+    .footer-bottom {
+      text-align: center;
+    }
+  
+    .social-icon {
+      font-size: 20px; /* Larger icons for small screens */
+    }
+  }
+  

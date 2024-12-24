@@ -1,0 +1,140 @@
+/* Wishlist Page Container */
+.wishlist-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Wishlist Title */
+  .wishlist-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Empty Wishlist Message */
+  .wishlist-container p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Product Card Layout */
+  .product-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Product Title */
+  .product-card .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Product Price */
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 15px;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Remove from Wishlist Button */
+  .remove-from-wishlist-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .remove-from-wishlist-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  /* Column Layout for Product Cards */
+  @media (max-width: 768px) {
+    .product-card {
+      padding: 15px;
+    }
+  
+    .product-image {
+      height: 200px;
+    }
+  
+    .price {
+      font-size: 18px;
+    }
+  
+    .add-to-cart-btn,
+    .remove-from-wishlist-btn {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-image {
+      height: 180px;
+    }
+  
+    .product-card .card-title {
+      font-size: 16px;
+    }
+  
+    .price {
+      font-size: 16px;
+    }
+  
+    .add-to-cart-btn,
+    .remove-from-wishlist-btn {
+      font-size: 12px;
+    }
+  }
+  
